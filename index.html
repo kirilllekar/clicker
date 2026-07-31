@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Космический Кристалл 💎</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Звёздный фон -->
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
+    <div class="stars stars-3"></div>
+
+    <div class="game-container">
+        <!-- ШАПКА -->
+        <header class="header">
+            <div class="energy-display">
+                <span class="energy-label">⚡ Энергия</span>
+                <span class="energy-value" id="energyValue">0</span>
+            </div>
+            <div class="eps-display">
+                <span class="eps-label">в секунду:</span>
+                <span class="eps-value" id="epsValue">0</span>
+            </div>
+            <div class="combo-display" id="comboDisplay">
+                <span class="combo-text" id="comboText">КОМБО x1</span>
+            </div>
+        </header>
+
+        <!-- ЦЕНТР: КРИСТАЛЛ -->
+        <main class="main">
+            <div class="crystal-wrapper">
+                <button class="crystal" id="crystal" aria-label="Кликнуть по кристаллу">
+                    <span class="crystal-emoji">💎</span>
+                </button>
+                <div class="click-power-label" id="clickPowerLabel">+1 за клик</div>
+            </div>
+        </main>
+
+        <!-- МАГАЗИН -->
+        <aside class="shop">
+            <h2 class="shop-title">🛒 Магазин улучшений</h2>
+            <div class="upgrades-list" id="upgradesList">
+                <!-- Карточки улучшений генерируются в JS -->
+            </div>
+            <div class="shop-footer">
+                <button class="reset-btn" id="resetBtn" title="Сбросить прогресс">🗑️ Сброс</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
